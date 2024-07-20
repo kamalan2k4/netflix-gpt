@@ -70,14 +70,11 @@ dispatch(addUser({ uid, email: userEmail, displayName, photoURL }));
     <div>
       <Header />
       <div className='absolute'>
-        <img
-          src={LOGO}
-          alt='bg'
-        />
+      <img className="h-screen w-screen object-cover" src={LOGO} alt="logo" />
       </div>
 
       <form
-        className='text-white absolute mx-auto right-0 left-0 w-4/12 p-12 bg-black my-40 rounded-lg bg-opacity-80'
+                className="w-full md:w-3/12 absolute p-12 bg-black my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80"
         onSubmit={handleSubmit}
       >
         <h1 className='font-bold text-3xl'>
